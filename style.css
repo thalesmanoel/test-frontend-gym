@@ -357,6 +357,10 @@ hr{
     flex-direction: column;
 }
 
+.text-sixthSection h2{
+    font-size: 20px;
+}
+
 .text-sixthSection p{
     max-width: 700px;
 }

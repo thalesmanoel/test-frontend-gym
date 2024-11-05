@@ -1,0 +1,39 @@
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .join{
+        width: 400px;
+    }
+
+    .sixthSection{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .join{
+        width: 500px;
+    }
+
+    .sixthSection{
+        width: 83%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .join{
+        width: 700px;
+    }
+
+    .sixthSection{
+        width: 88%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .join{
+        width: 800px;
+    }
+
+    .sixthSection{
+        width: 90%;
+    }
+}
