@@ -21,11 +21,11 @@
 body{
     background-color: var(--cor0);
     height: 100vh;
-    width: 70%;
-    margin: auto;
 }
 
 main{
+    display: flex;
+    align-items: center;
     gap: 30px;
 }
 
@@ -77,12 +77,16 @@ main{
     margin: auto;
 }
 
+section{
+    padding: 3rem;
+}
+
 .firstSection{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10%;
+    justify-content: center;
 }
 
 h1, h2, h3{
@@ -113,16 +117,36 @@ p{
 
 .secondSection{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 10%;
+    gap: 20px;
+}
+
+.text-secondSection{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.icon-secondSection{
+    display: flex;
+    gap: 30px;
+}
+
+.icon-secondSection svg:hover{
+    fill: var(--cor4);
+}
+
+.arrow-right{
+    transform: rotate(180deg);
 }
 
 .secondSection .container-card{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;    
 }
 
@@ -161,8 +185,9 @@ p{
 .thirdSection{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 20px;
 }
 
 .class1-class2{
@@ -172,7 +197,7 @@ p{
 .text-thirdSection{
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .fourthSection{
@@ -188,6 +213,7 @@ p{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
     max-width: 700px;
 }
 
@@ -210,16 +236,21 @@ p{
     align-items: center;
     justify-content: center;
     max-width: 700px;
+    text-align: center;
 }
 
 .container-card-plan{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;  
 }
 
 .card-plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--cor1);
     padding: 30px;
     border: 1px solid transparent;
@@ -239,9 +270,11 @@ hr{
 }
 
 .btn-card-plan button{
+    width: 100%;
     background-color: transparent;
     border: 1px solid var(--cor4);
     color: var(--cor4);
+    transition: 0.5s;
 }
 
 .btn-card-plan button:hover{
@@ -253,3 +286,98 @@ hr{
     border: none;
 }
 
+.sixthSection{
+    width: 93%;
+    background-color: var(--cor1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.text-sixthSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-sixthSection p{
+    max-width: 700px;
+}
+
+.user-jane{
+    display: flex;
+    gap: 10px;
+}
+
+.user-jane img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.assessment{
+    width: 100px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 40px;
+}
+
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.logo-footer p{
+    max-width: 400px;
+}
+
+.img-footer{
+    width: 150px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.name{
+    margin-bottom: 10px;
+}
+
+li{
+    color: var(--cor6);
+    list-style-type: none;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+li:hover{
+    color: var(--cor4);
+    cursor: pointer;
+}
+
+.name:hover{
+    color: var(--cor6);
+    cursor: default;
+}
+
+footer figure svg{
+    padding: 5px;
+    border: 1px solid var(--cor4);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+footer figure svg:hover{
+    background-color: var(--cor3);
+    fill: var(--cor6);
+}
