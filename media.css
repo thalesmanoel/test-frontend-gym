@@ -1,4 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 480px){
+
     .class1-class2{
         width: 400px;
     }
@@ -13,6 +14,7 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px){
+
     .class1-class2{
         width: 450px;
     }
